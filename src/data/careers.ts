@@ -1,0 +1,196 @@
+import { CareerPath } from '../types';
+
+export interface CareerPathExtended extends CareerPath {
+  salaryRange: string;
+  topColleges: string[];
+  entranceExams: string[];
+  eligibility: string;
+  courseDuration: string;
+  jobOpportunities: string[];
+  governmentOpportunities?: string[];
+  privateOpportunities?: string[];
+  futureScope: string;
+  workEnvironment: string;
+}
+
+export const careerDatabase: CareerPathExtended[] = [
+  {
+    title: "Software Engineer/Developer",
+    description: "Design and develop software applications, websites, and mobile apps for leading Indian IT giants like TCS, Infosys, Wipro, and innovative startups. India's IT sector offers excellent growth opportunities with global exposure.",
+    requiredSkills: ["Programming (Java, Python, JavaScript)", "Data Structures & Algorithms", "Database Management", "Version Control (Git)", "Problem Solving", "System Design"],
+    certification: "AWS Certified Developer, Microsoft Azure Certifications, Google Cloud Professional",
+    matchingStreams: ["Computer Science", "Information Technology", "Software Engineering", "Mathematics", "Electronics"],
+    matchingInterests: ["coding", "technology", "problem-solving", "innovation", "computers", "apps"],
+    salaryRange: "₹3.5-25 LPA (Fresher to Senior)",
+    topColleges: ["IIT Delhi", "IIT Bombay", "IIIT Hyderabad", "NIT Trichy", "BITS Pilani", "VIT Vellore", "SRM Chennai", "Manipal Institute"],
+    entranceExams: ["JEE Main", "JEE Advanced", "BITSAT", "VITEEE", "COMEDK", "MET", "SRMJEEE"],
+    eligibility: "12th with PCM (75% for IITs), B.Tech/BE in CSE/IT",
+    courseDuration: "4 years (B.Tech) + Optional 2 years (M.Tech)",
+    jobOpportunities: ["Software Developer", "Full Stack Developer", "Mobile App Developer", "DevOps Engineer", "Technical Lead", "Solutions Architect"],
+    governmentOpportunities: ["ISRO", "DRDO", "BSNL", "CDAC", "NIC", "Railways (RRTS)", "Defense Research"],
+    privateOpportunities: ["TCS", "Infosys", "Wipro", "HCL", "Tech Mahindra", "Flipkart", "Amazon", "Google", "Microsoft", "Paytm"],
+    futureScope: "Excellent growth in AI/ML, Cloud Computing, Blockchain, IoT, Cybersecurity, AR/VR",
+    workEnvironment: "Office-based with hybrid/remote options, collaborative teams, global projects"
+  },
+  {
+    title: "Civil Services Officer (IAS/IPS/IFS)",
+    description: "Serve the nation as an administrative officer, implementing government policies, maintaining law and order, and representing India globally. Most prestigious career with immense social impact and respect.",
+    requiredSkills: ["Leadership", "Public Administration", "General Knowledge", "Communication", "Analytical Thinking", "Ethics", "Decision Making"],
+    certification: "UPSC Civil Services Examination (Prelims + Mains + Interview)",
+    matchingStreams: ["Arts", "Political Science", "History", "Economics", "Public Administration", "Any Graduate", "Engineering", "Medical"],
+    matchingInterests: ["public-service", "leadership", "governance", "social-work", "current-affairs", "administration"],
+    salaryRange: "₹56,100-2,25,000 per month (7th Pay Commission) + Perks",
+    topColleges: ["Delhi University", "JNU", "Jamia Millia Islamia", "Aligarh Muslim University", "Banaras Hindu University", "Presidency College"],
+    entranceExams: ["UPSC CSE Prelims", "UPSC CSE Mains", "UPSC Personality Test"],
+    eligibility: "Graduate in any discipline, Age: 21-32 years (relaxation for reserved categories)",
+    courseDuration: "Any 3-4 year degree + 1-3 years preparation",
+    jobOpportunities: ["District Collector", "Police Superintendent", "Foreign Service Officer", "Joint Secretary", "Commissioner"],
+    governmentOpportunities: ["IAS - Administrative Service", "IPS - Police Service", "IFS - Foreign Service", "IRS - Revenue Service", "Central Secretariat"],
+    futureScope: "Leadership positions in government, policy making, international relations, digital governance",
+    workEnvironment: "Field work, office administration, public interaction, policy formulation"
+  },
+  {
+    title: "Medical Doctor (MBBS/MD/MS)",
+    description: "Diagnose, treat, and prevent diseases while providing healthcare services. Noble profession with high social respect and excellent earning potential in India's growing healthcare sector.",
+    requiredSkills: ["Medical Knowledge", "Patient Care", "Diagnosis", "Surgery Skills", "Communication", "Empathy", "Critical Thinking"],
+    certification: "MBBS from NMC recognized college, NEET qualification, Medical License, Specialization degrees",
+    matchingStreams: ["Medical Science", "Biology", "Chemistry", "Physics with Biology"],
+    matchingInterests: ["healthcare", "helping-others", "biology", "medical-science", "research", "patient-care"],
+    salaryRange: "₹6-50 LPA (Government to Private Practice)",
+    topColleges: ["AIIMS Delhi", "AIIMS Bombay", "JIPMER", "CMC Vellore", "KGMU", "MAMC Delhi", "Grant Medical College", "Maulana Azad Medical College"],
+    entranceExams: ["NEET UG", "NEET PG", "AIIMS MBBS", "JIPMER MBBS", "INI CET"],
+    eligibility: "12th with PCB (50% for General, 40% for SC/ST/OBC), NEET qualification",
+    courseDuration: "5.5 years MBBS + 1 year internship + 3 years MD/MS (for specialization)",
+    jobOpportunities: ["General Physician", "Specialist Doctor", "Surgeon", "Medical Officer", "Hospital Administrator", "Medical Researcher"],
+    governmentOpportunities: ["AIIMS", "Government Hospitals", "Railway Medical", "Army Medical Corps", "ESIC", "State Health Services"],
+    privateOpportunities: ["Apollo Hospitals", "Fortis", "Max Healthcare", "Manipal Hospitals", "Private Clinics", "Medical Tourism"],
+    futureScope: "Telemedicine, AI in healthcare, robotic surgery, personalized medicine, medical research",
+    workEnvironment: "Hospitals, clinics, emergency services, research labs, patient interaction"
+  },
+  {
+    title: "Chartered Accountant (CA)",
+    description: "Provide financial advisory, auditing, taxation, and business consulting services. CA is one of India's most respected professional qualifications with excellent career prospects across all industries.",
+    requiredSkills: ["Accounting", "Taxation", "Auditing", "Financial Analysis", "Business Law", "Excel Proficiency", "GST Knowledge"],
+    certification: "CA from Institute of Chartered Accountants of India (ICAI)",
+    matchingStreams: ["Commerce", "Accounting", "Economics", "Business Studies", "Mathematics", "Any Graduate"],
+    matchingInterests: ["finance", "accounting", "business", "analysis", "numbers", "taxation", "consulting"],
+    salaryRange: "₹6-50 LPA (Practice to Senior Partner)",
+    topColleges: ["Any recognized college for graduation + CA coaching institutes like Arun Sharma, Praveen Sharma"],
+    entranceExams: ["CA Foundation", "CA Intermediate", "CA Final"],
+    eligibility: "12th pass for CA Foundation, Graduate for Direct Intermediate entry",
+    courseDuration: "4.5-5 years (Foundation + Intermediate + Final + 3 years Articleship)",
+    jobOpportunities: ["Chartered Accountant", "Financial Advisor", "Tax Consultant", "Audit Manager", "CFO", "Investment Banker"],
+    governmentOpportunities: ["CAG Office", "Income Tax Department", "RBI", "SEBI", "PSU Finance Departments"],
+    privateOpportunities: ["Big 4 Firms (EY, KPMG, PwC, Deloitte)", "Banks", "MNCs", "Private Practice", "Consulting Firms"],
+    futureScope: "Digital accounting, GST consulting, international taxation, forensic accounting, ESG reporting",
+    workEnvironment: "Office-based, client meetings, field audits, financial analysis"
+  },
+  {
+    title: "Engineering Professional",
+    description: "Design, build, and maintain infrastructure, technology, and systems across various engineering disciplines. India's engineering sector offers diverse opportunities from core industries to emerging technologies.",
+    requiredSkills: ["Technical Knowledge", "Problem Solving", "Mathematics", "Design Software (AutoCAD, SolidWorks)", "Project Management"],
+    certification: "B.Tech/BE from AICTE approved college, Professional Engineering License, Industry certifications",
+    matchingStreams: ["Engineering", "Mathematics", "Physics", "Chemistry", "Computer Science"],
+    matchingInterests: ["engineering", "technology", "problem-solving", "innovation", "building", "design", "manufacturing"],
+    salaryRange: "₹3-30 LPA (Core to Software Engineering)",
+    topColleges: ["IIT Bombay", "IIT Delhi", "IIT Madras", "NIT Trichy", "BITS Pilani", "VIT", "Manipal", "Thapar University"],
+    entranceExams: ["JEE Main", "JEE Advanced", "BITSAT", "VITEEE", "State CETs (MHT-CET, KCET, EAMCET)"],
+    eligibility: "12th with PCM (75% for IITs), JEE qualification",
+    courseDuration: "4 years B.Tech + Optional 2 years M.Tech",
+    jobOpportunities: ["Design Engineer", "Project Manager", "Research Engineer", "Consultant", "Entrepreneur", "Technical Sales"],
+    governmentOpportunities: ["ISRO", "DRDO", "BHEL", "NTPC", "Indian Railways", "ONGC", "SAIL", "HAL"],
+    privateOpportunities: ["L&T", "Tata Motors", "Reliance", "Mahindra", "Bajaj", "Maruti Suzuki", "Bosch", "Siemens"],
+    futureScope: "Green technology, automation, AI integration, sustainable engineering, renewable energy",
+    workEnvironment: "Manufacturing plants, offices, field sites, R&D labs, project sites"
+  },
+  {
+    title: "Banking Professional",
+    description: "Work in India's robust banking sector providing financial services, loans, investment advice, and customer support. Banking offers stable career growth with opportunities in both public and private sectors.",
+    requiredSkills: ["Financial Knowledge", "Customer Service", "Communication", "Sales", "Risk Assessment", "Computer Skills", "Banking Regulations"],
+    certification: "Banking exams (SBI PO, IBPS), CAIIB, FRM, CFA certifications",
+    matchingStreams: ["Commerce", "Economics", "Finance", "Business Studies", "Mathematics", "Any Graduate"],
+    matchingInterests: ["finance", "customer-service", "business", "numbers", "communication", "economics", "investment"],
+    salaryRange: "₹3.5-25 LPA (Clerk to General Manager)",
+    topColleges: ["Delhi University", "Mumbai University", "Pune University", "Christ University", "Any recognized college"],
+    entranceExams: ["IBPS PO", "SBI PO", "RBI Grade B", "NABARD Grade A", "Bank Clerk exams", "SBI Clerk"],
+    eligibility: "Graduate in any discipline, Age limits: 20-30 years (varies by exam)",
+    courseDuration: "3 years graduation + 6 months to 2 years preparation",
+    jobOpportunities: ["Bank PO", "Relationship Manager", "Credit Analyst", "Branch Manager", "Investment Advisor", "Loan Officer"],
+    governmentOpportunities: ["SBI", "PNB", "Bank of Baroda", "Canara Bank", "RBI", "NABARD", "SIDBI"],
+    privateOpportunities: ["HDFC Bank", "ICICI Bank", "Axis Bank", "Kotak Mahindra", "Yes Bank", "IndusInd Bank"],
+    futureScope: "Digital banking, fintech integration, cryptocurrency regulations, mobile banking, AI in banking",
+    workEnvironment: "Bank branches, corporate offices, customer interaction, financial analysis"
+  },
+  {
+    title: "Data Scientist/Analyst",
+    description: "Analyze complex data to drive business decisions for Indian companies, startups, and government initiatives. High-demand field with excellent growth prospects in India's digital economy and AI revolution.",
+    requiredSkills: ["Python/R Programming", "Statistics", "Machine Learning", "SQL", "Data Visualization", "Business Analytics", "Big Data"],
+    certification: "Google Data Analytics, IBM Data Science, Microsoft Azure Data Scientist, AWS Machine Learning",
+    matchingStreams: ["Computer Science", "Statistics", "Mathematics", "Economics", "Engineering", "Physics"],
+    matchingInterests: ["data", "analytics", "research", "statistics", "artificial-intelligence", "problem-solving", "technology"],
+    salaryRange: "₹4-35 LPA (Junior to Senior Data Scientist)",
+    topColleges: ["IIT", "IIM", "ISI Kolkata", "IIIT", "NIT", "Delhi University", "IISc Bangalore"],
+    entranceExams: ["JEE", "CAT", "GATE", "Direct admission based on graduation", "ISI Admission Test"],
+    eligibility: "Graduate in quantitative field (Math, Stats, CS, Engineering), Programming knowledge preferred",
+    courseDuration: "3-4 years graduation + 6 months to 2 years specialization",
+    jobOpportunities: ["Data Scientist", "Business Analyst", "ML Engineer", "Research Analyst", "Data Engineer", "AI Specialist"],
+    governmentOpportunities: ["ISRO", "Statistics Department", "Election Commission", "Census Operations", "NITI Aayog"],
+    privateOpportunities: ["Flipkart", "Amazon", "Ola", "Swiggy", "Paytm", "Zomato", "Analytics Companies", "Consulting Firms"],
+    futureScope: "AI/ML advancement, big data analytics, IoT data processing, predictive analytics, deep learning",
+    workEnvironment: "Tech offices, remote work options, collaborative teams, research environments"
+  },
+  {
+    title: "Teaching Professional",
+    description: "Educate and inspire students across various levels from primary to higher education. Teaching offers job security, social respect, and opportunity to shape future generations in India with growing emphasis on quality education.",
+    requiredSkills: ["Subject Expertise", "Communication", "Classroom Management", "Curriculum Development", "Technology Integration", "Patience"],
+    certification: "B.Ed, M.Ed, UGC NET, SET, CTET for different levels, Ph.D for higher education",
+    matchingStreams: ["Education", "Subject-specific degrees", "Arts", "Science", "Commerce", "Engineering", "Medical"],
+    matchingInterests: ["teaching", "education", "mentoring", "knowledge-sharing", "working-with-children", "research"],
+    salaryRange: "₹2.5-15 LPA (School to College Professor)",
+    topColleges: ["JNU", "DU", "BHU", "Jamia", "Regional Education Universities", "TISS", "NCERT"],
+    entranceExams: ["UGC NET", "SET", "CTET", "TET", "B.Ed Entrance", "Ph.D Entrance"],
+    eligibility: "Graduate for B.Ed, Post-graduate for NET/SET, Ph.D for Professor positions",
+    courseDuration: "3 years graduation + 2 years B.Ed + Optional M.Ed/Ph.D",
+    jobOpportunities: ["School Teacher", "College Lecturer", "Professor", "Education Consultant", "Curriculum Designer", "Academic Researcher"],
+    governmentOpportunities: ["Government Schools", "Colleges", "Universities", "Education Department", "NCERT", "CBSE"],
+    privateOpportunities: ["Private Schools", "Coaching Institutes", "EdTech Companies", "International Schools", "Online Platforms"],
+    futureScope: "Online education, EdTech integration, personalized learning, AI in education, digital classrooms",
+    workEnvironment: "Schools, colleges, online platforms, educational institutions, research centers"
+  },
+  {
+    title: "Esports Professional/Coach",
+    description: "Compete in professional esports tournaments or coach teams in popular games like Valorant, CS:GO, Dota 2, and Free Fire. India's esports industry is booming with significant investment and global recognition.",
+    requiredSkills: ["Game Mastery", "Strategic Thinking", "Team Leadership", "Communication", "Analytical Skills", "Streaming Ability"],
+    certification: "In-game rankings, Tournament participation, Coaching certifications from platforms like Gamer Sensei",
+    matchingStreams: ["Any Stream", "Computer Science", "Information Technology", "Mass Communication", "Psychology"],
+    matchingInterests: ["gaming", "esports", "competition", "strategy", "teamwork", "coaching", "streaming"],
+    salaryRange: "₹2-50 LPA (Player to Tournament Organizer)",
+    topColleges: ["N/A - Skill-based", "Esports Academy India", "Reign Esports", "Team Soul", "Orangutan India"],
+    entranceExams: ["Game Skill Demonstrations", "Tournament Performance", "Tryouts"],
+    eligibility: "13+ years, Passion for gaming, High performance in chosen games",
+    courseDuration: "Self-taught or 6 months to 2 years in professional coaching",
+    jobOpportunities: ["Professional Player", "Team Coach", "Content Creator", "Tournament Analyst", "Streaming", "Game Testing"],
+    governmentOpportunities: ["Sports Ministry Esports Programs", "National Esports Teams"],
+    privateOpportunities: ["Professional Esports Teams", "Gaming Organizations", "Streaming Platforms", "Content Creation Agencies"],
+    futureScope: "Growth in mobile esports, AR/VR gaming, virtual tournaments, global competitions, brand partnerships",
+    workEnvironment: "Online gaming, streaming setups, team practice facilities, tournament venues, remote work"
+  },
+  {
+    title: "YouTube Content Creator/Video Editor",
+    description: "Create engaging video content for YouTube and other platforms. With over 400 million internet users in India, content creation is a rapidly growing field with diverse opportunities.",
+    requiredSkills: ["Video Editing", "Content Creation", "Script Writing", "Camera Handling", "Audio Editing", "Social Media Marketing", "Creativity"],
+    certification: "Adobe Certification, YouTube Creator Academy, Skillshare courses, Self-taught expertise",
+    matchingStreams: ["Mass Communication", "Fine Arts", "Computer Science", "Information Technology", "Business Studies", "Any Stream"],
+    matchingInterests: ["content-creation", "video-making", "editing", "storytelling", "entertainment", "youtube", "social-media", "creativity"],
+    salaryRange: "₹1-100 LPA (Starter to Top Creators)",
+    topColleges: ["Whistling Woods", "FTII", "Srishti Institute", "Arena Animation", "MAAC", "Self-taught"],
+    entranceExams: ["Portfolio Submission", "Practical Demonstrations", "YouTube Channel Performance"],
+    eligibility: "10th pass minimum, Creative skills, Video editing proficiency",
+    courseDuration: "3 months to 2 years for formal courses, Self-taught varies",
+    jobOpportunities: ["YouTube Creator", "Video Editor", "Content Strategist", "Brand Collaborator", "Social Media Manager", "Freelancer"],
+    governmentOpportunities: ["Digital India Initiatives", "Ministry of Electronics and IT Content Programs"],
+    privateOpportunities: ["Digital Marketing Agencies", "Production Houses", "Brands", "Influencer Networks", "Streaming Platforms"],
+    futureScope: "Short-form content, AR/VR content, AI-assisted editing, virtual influencers, global audience reach",
+    workEnvironment: "Home studios, Production houses, Remote work, Collaborative spaces, Event venues"
+  }
+];
