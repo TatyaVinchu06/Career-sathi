@@ -7,7 +7,7 @@ import PreparationTips from './components/PreparationTips';
 import InteractiveBackground from './components/InteractiveBackground';
 import ExpertInsightsPage from './components/expert-insights/ExpertInsightsPage';
 import { Chatbot } from '../chatbot';
-import { Compass, Star, MessageSquare, Target } from 'lucide-react';
+import { Compass, Star, MessageSquare, Target, Shield } from 'lucide-react';
 import StudentForm from './components/StudentForm';
 import CareerResults from './components/CareerResults';
 
@@ -30,6 +30,7 @@ function App() {
   const handleShowRoadmap = () => setCurrentStep('roadmap');
   const handleFeedback = () => window.open('https://forms.gle/vmsAgNUULiYgG8sC7', '_blank');
   const handleStartAssessment = () => setCurrentStep('form');
+  const handleDefenseGuide = () => setCurrentStep('roadmap'); // Using existing roadmap for defense
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -83,17 +84,28 @@ function App() {
                   Whether you're just starting your journey or planning your next step, Career Compass helps you unlock the best path forward with personalized AI career guidance.
                 </p>
 
-                {/* Bigger and More Attractive CTA Button */}
-                <div className="flex flex-col items-center justify-center mb-16">
+                {/* CTA Buttons - Added Defense Career Guide */}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
                   <button 
                     onClick={handleStartAssessment}
-                    className="relative overflow-hidden bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white py-8 px-16 rounded-3xl font-bold text-4xl hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 transform hover:scale-110 transition-all duration-300 shadow-2xl group animate-pulse"
+                    className="relative overflow-hidden bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white py-6 px-10 rounded-2xl font-bold text-2xl hover:from-green-600 hover:via-emerald-600 hover:to-teal-600 transform hover:scale-105 transition-all duration-300 shadow-2xl group"
                   >
-                    <span className="relative z-10 flex items-center gap-4">
-                      <Target className="w-10 h-10" />
+                    <span className="relative z-10 flex items-center gap-3">
+                      <Target className="w-7 h-7" />
                       Get Started
                     </span>
                     <div className="absolute inset-0 bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </button>
+                  
+                  <button 
+                    onClick={handleDefenseGuide}
+                    className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-6 px-10 rounded-2xl font-bold text-2xl hover:from-blue-700 hover:via-indigo-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-2xl group"
+                  >
+                    <span className="relative z-10 flex items-center gap-3">
+                      <Shield className="w-7 h-7" />
+                      Defense Guide
+                    </span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </button>
                 </div>
 
